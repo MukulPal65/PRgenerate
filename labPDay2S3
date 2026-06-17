@@ -1,0 +1,36 @@
+var marks=[78, 92, 65, 88, 95,70];
+
+function highestmark(){
+    var a=0;
+    for(var i=0;i<marks.length;i++){
+        if(marks[i]>a){
+            a=marks[i];
+        }
+    }
+    console.log(a);
+}
+
+function lowestmark(){
+    var a=0;
+    for(var i=0;i<marks.length;i++){
+        if(marks[i]<a){
+            a=marks[i];
+        }
+    }
+    console.log(a);
+}
+
+function avgmarks(){
+    var b=0,c=0;
+    for(var i=0;i<marks.length;i++){
+        b=b+marks[i];
+        c=b/marks.length;
+    }
+    console.log(c);
+}
+
+
+
+highestmark();
+lowestmark();
+avgmarks();
